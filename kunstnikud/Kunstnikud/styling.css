@@ -1,0 +1,57 @@
+
+#nelik{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 100vh;
+}
+#row{
+  width: 100vw;
+  height: 40vh;
+}
+
+.column img {
+  width: 100%;
+  height: 100%;
+}
+.pilditekst{
+  /*position absolute, et oleks pildi peal*/
+  position: absolute;
+  top: 25%;
+  /* width nagu piltidel 25% yldisest */
+  width: 25%;
+  /*viimased kaks nr opacity hexis*/
+  background:#ff9eb69c;
+  color:black;
+  visibility:visible;
+  opacity:0;
+  transition:opacity .2s,visibility .2s;
+}
+.pilditekst  p {
+  padding: 1.5%;
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+.column:hover .pilditekst{
+  visibility: visible;
+  opacity: 1;
+}
+h3{
+  text-align: center;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+summary {
+  text-align: center;
+  font-weight: bold;
+  font-size: small;
+}
+.pl{
+  margin-left: 40%;
+}
+img.plönn{
+  height: 2rem;
+  width: auto;
+}
+
